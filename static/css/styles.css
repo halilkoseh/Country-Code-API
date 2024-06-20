@@ -1,0 +1,6 @@
+body {
+    background-image: url('https://www.mfeteknoloji.com/assets/images/mfe-map-illustration.svg');
+    background-size: cover; /* Resmi pencere boyutuna sığacak şekilde ölçeklendirir */
+    background-repeat: no-repeat; /* Resmin tekrar etmemesini sağlar */
+    background-attachment: fixed; /* Resmin kaydırılırken sabit kalmasını sağlar */
+}

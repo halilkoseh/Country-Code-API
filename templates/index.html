@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Code Information System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="static/images/image1.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center h-screen" style="background-image: url('static/images/image2.jpg'); background-position: center; background-size: cover;">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+        <h1 class="text-2xl font-bold mb-4 text-center">Ülke Bilgisi</h1>
+        <input type="text" id="search" placeholder="Ülke adı ya da kodunu giriniz." oninput="suggestCountries()" class="w-full p-2 border border-gray-300 rounded mb-4">
+        <div id="suggestions" class="suggestions"></div>
+        <button onclick="searchCountry()" class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Ara</button>
+        <div id="result" class="mt-4 text-left"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+    <div class="fixed bottom-0 w-full bg-gray-50 text-center py-2 text-black">
+        <a href="https://linktr.ee/halilkoseh">You can reach me by <span class="underline">clicking</span></a>
+    </div>
+</body>
+
+</html>
